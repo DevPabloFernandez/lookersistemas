@@ -20,4 +20,9 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 # }
 
 
-explore: tb_documentos_legales {}
+explore: tb_documentos_legales {
+  access_filter: {
+    field: empresa
+    user_attribute: empresa
+  }
+}
